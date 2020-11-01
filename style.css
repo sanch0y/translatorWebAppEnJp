@@ -1,0 +1,251 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #141414;
+    font-size: 16px;
+    color: #2b2d42;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.center{
+  background:#292929;
+  position: absolute;
+  top: 1%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+input[type="checkbox"]{
+  position: relative;
+  width: 120px;
+  height: 40px;
+  -webkit-appearance: none;
+  background: linear-gradient(0deg, #333, #000);
+  outline:none;
+  border-radius: 20px;
+  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px
+  rgba(0,0,0,1), 0 5px 20px rgba(0,0,0,.5), inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+input:checked[type="checkbox"]
+{
+  background : #bfd200;
+}
+
+input[type="checkbox"]:before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 40px;
+  background: linear-gradient(0deg, #000, #6b6b6b);
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #232323;
+  transform: scale(.98,.96);
+  transition: .5s;
+}
+
+input:checked[type="checkbox"]:before
+{
+  left: 40px;
+}
+
+input[type="checkbox"]:after
+{
+  content: "JP";
+  color: #6b6b6b;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  width: 4px;
+  height: 4px;
+  background: linear-gradient(0deg, #6b6b6b, #000);
+  border-radius: 50%;
+  transition: .5s;
+}
+
+input:checked[type="checkbox"]:after
+{
+  background: #bfd200;
+  color: #bfd200;
+  left: 90px;
+  text-shadow: 0 0 4px #d4d700, 0 0 4px #d4d700;
+  box-shadow: 0 0 4px #d4d700, 0 0 4px #d4d700;
+}
+
+#speaking-listening-box
+{
+    border-radius: 10px;
+    position: relative;
+    margin: 5% auto;
+    height: 550px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.left-box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 350px;
+    height: 450px;
+}
+
+h1
+{
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+#speakingoutput
+{
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 240px;
+    height: 180px;
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    font-weight: 40;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+#speak
+{
+    margin-bottom: 28px;
+    width: 120px;
+    height: 32px;
+    background: #f44336;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+
+}
+
+#speak:hover,
+#speak:focus
+{
+    border: solid 2px #ff5722;
+    background: #fff;
+    color: #ff5722;
+    transition: 0.2s ease;
+}
+
+.right-box
+{
+    background: #2b2d42;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 355px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+#listeningoutput
+{
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    color: #2b2d42;
+    width: 240px;
+    height: 180px;
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    font-weight: 40;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.or
+{
+    position: absolute;
+    bottom: 0;
+    left: 275px;
+    width: 140px;
+    height: 40px;
+    background: #fff;
+    border-radius: 45%;
+    box-shadow: 3px 3px 4px #ffba08;
+    line-height: 40px;
+    text-align: center;
+}
+
+#listen
+{
+    margin-bottom: 28px;
+    width: 120px;
+    height: 32px;
+    background: #55acee;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+    cursor: pointer;
+
+}
+
+#listen:hover,
+#listen:focus
+{
+    border: solid 2px #55acee;
+    background: #fff;
+    color: #55acee;
+    transition: 0.2s ease;
+}
+
+/* Old CSS */
+/* .show {
+  display: block;
+} */
+
+.translated-ltr {
+  margin-top: -40px;
+}
+
+.translated-ltr {
+  margin-top: -40px;
+}
+
+.goog-te-banner-frame {
+  display: none;
+  margin-top: -20px;
+}
+
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+}

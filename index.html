@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+  <title> Translator Web App </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/98ee088620.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="google_translate_element" style='display:none'></div>
+
+  <div id="speaking-listening-box">
+    <div class="left-box">
+      <h3>Click on the button for speaking...</h3>
+      <p><span id="action"></span></p>
+      <button type="button" id="speak"><span><i class="fas fa-microphone-alt"></i></span>&nbsp;<span>Speak</span></button>
+      <div class="">
+        <span id="yousaid"></span>
+        <textarea id="speakingoutput"></textarea>
+      </div>
+    </div>
+
+    <div class="right-box">
+      <h3>Click on the button for listening...</h3>
+      <span id="youarelisteninnng"></span>
+      <button type="button" id="listen"><span><i class="fas fa-headphones"></i></span>&nbsp;<span>Listen</span></button>
+      <div id="listeningoutput"></div>
+    </div>
+
+    <div class="or"><span style="font-weight: bold; color: #ff5722">Speak</span> and <span style="font-weight: bold; color: #55acee">Listen</span></div>
+
+    <div class="center">
+      <input type="checkbox" class="checkbox">
+    </div>
+  </div>
+
+  <!-- Javascripts -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="https://uploads-ssl.webflow.com/5e6cdff43dea835e0d32f309/5e6ce61775d1ae4d0299ac82_translator.txt"></script>
+  <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+</body>
+
+</html>
